@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildMaster Solutions - Privacy Policy</title>
+    <style>
+        :root {
+            --deep-blue: #1a2980;
+            --vibrant-blue: #26d0ce;
+            --soft-gray: #f4f4f4;
+            --dark-text: #2c3e50;
+            --accent-gradient: linear-gradient(135deg, #1a2980, #26d0ce);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--soft-gray);
+            line-height: 1.6;
+            color: var(--dark-text);
+        }
+
+        .privacy-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            perspective: 1000px;
+        }
+
+        .privacy-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transform-style: preserve-3d;
+            transform: rotateX(5deg) scale(0.95);
+            transition: all 0.4s ease;
+        }
+
+        .privacy-header {
+            background: var(--accent-gradient);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .privacy-header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .privacy-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+
+        .policy-content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .policy-section {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+
+        .policy-section:hover {
+            border-color: var(--vibrant-blue);
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .policy-section h2 {
+            color: var(--deep-blue);
+            margin-bottom: 15px;
+            position: relative;
+            font-size: 1.3rem;
+        }
+
+        .policy-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--vibrant-blue);
+        }
+
+        .cookies-popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 25px;
+            z-index: 1000;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .cookies-popup.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .cookies-popup h3 {
+            color: var(--deep-blue);
+            margin-bottom: 15px;
+        }
+
+        .cookies-btn {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-accept {
+            background: var(--vibrant-blue);
+            color: white;
+        }
+
+        .btn-decline {
+            background: #e74c3c;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .policy-content {
+                grid-template-columns: 1fr;
+            }
+            .cookies-popup {
+                width: calc(100% - 40px);
+                left: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-wrapper">
+        <div class="privacy-container">
+            <div class="privacy-header">
+                <h1>BuildMaster Solutions</h1>
+                <p>Comprehensive Privacy & Data Protection</p>
+            </div>
+
+            <div class="policy-content">
+                <div class="policy-section">
+                    <h2>Data Collection</h2>
+                    <ul>
+                        <li>Personal Contact Details</li>
+                        <li>Project Specifications</li>
+                        <li>Communication Logs</li>
+                        <li>Professional Credentials</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Usage Principles</h2>
+                    <ul>
+                        <li>Service Management</li>
+                        <li>Project Communication</li>
+                        <li>Compliance Tracking</li>
+                        <li>Continuous Improvement</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Security Protocols</h2>
+                    <ul>
+                        <li>Advanced Encryption</li>
+                        <li>Secure Cloud Storage</li>
+                        <li>Regular Security Audits</li>
+                        <li>Strict Access Controls</li>
+                    </ul>
+                </div>
+
+                <div class="policy-section">
+                    <h2>User Rights</h2>
+                    <ul>
+                        <li>Information Access</li>
+                        <li>Data Correction</li>
+                        <li>Deletion Requests</li>
+                        <li>Communication Opt-out</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookies-popup" id="cookiesPopup">
+        <h3>🍪 Cookie Preferences</h3>
+        <p>We use cookies to enhance your browsing experience and analyze site traffic.</p>
+        <div class="cookies-btn">
+            <button class="btn btn-accept" id="acceptCookies">Accept All</button>
+            <button class="btn btn-decline" id="declineCookies">Decline</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cookiesPopup = document.getElementById('cookiesPopup');
+            const acceptBtn = document.getElementById('acceptCookies');
+            const declineBtn = document.getElementById('declineCookies');
+
+            // Show popup after 2 seconds
+            setTimeout(() => {
+                cookiesPopup.classList.add('active');
+            }, 2000);
+
+            // Accept cookies
+            acceptBtn.addEventListener('click', () => {
+                cookiesPopup.classList.remove('active');
+                setTimeout(() => {
+                    cookiesPopup.style.display = 'none';
+                }, 400);
+            });
+
+            // Decline cookies
+            declineBtn.addEventListener('click', () => {
+                cookiesPopup.classList.remove('active');
+                setTimeout(() => {
+                    cookiesPopup.style.display = 'none';
+                }, 400);
+            });
+        });
+    </script>
+</body>
+</html>

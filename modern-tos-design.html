@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Terms of Service</title>
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #10b981;
+            --background-light: #f3f4f6;
+            --text-dark: #1f2937;
+            --accent-color: #6366f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+        }
+
+        .tos-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            perspective: 1000px;
+        }
+
+        .tos-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            transform-style: preserve-3d;
+            transition: transform 0.6s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tos-card:hover {
+            transform: rotateX(5deg) rotateY(-5deg) scale(1.02);
+        }
+
+        .tos-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .tos-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+
+        .tos-header h1::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: -10px;
+            left: 0;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0.7);
+            transition: transform 0.3s ease;
+        }
+
+        .tos-header h1:hover::after {
+            transform: scaleX(1);
+        }
+
+        .tos-section {
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            background-color: #f9fafb;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .tos-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .tos-section:hover::before {
+            transform: scaleY(1);
+        }
+
+        .tos-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .tos-section p {
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        .tos-footer {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .accept-btn {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .accept-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="tos-container">
+        <div class="tos-card">
+            <div class="tos-header">
+                <h1>Terms of Service</h1>
+            </div>
+
+            <div class="tos-section">
+                <h2>1. Acceptance of Terms</h2>
+                <p>By accessing and using our service, you enter into a legally binding agreement with our platform. These terms outline the rights, responsibilities, and expectations for both users and our organization.</p>
+            </div>
+
+            <div class="tos-section">
+                <h2>2. User Rights and Responsibilities</h2>
+                <p>Users are granted a non-transferable, limited license to access our services. This license is conditional upon complete compliance with these terms, including ethical use, respect for intellectual property, and maintaining account security.</p>
+            </div>
+
+            <div class="tos-section">
+                <h2>3. Data Privacy and Protection</h2>
+                <p>We are committed to protecting your personal information through advanced encryption, strict access controls, and transparent data handling practices. Your privacy is our priority, and we adhere to international data protection standards.</p>
+            </div>
+
+            <div class="tos-section">
+                <h2>4. Service Usage Limitations</h2>
+                <p>Our service is provided "as is" with no guaranteed uninterrupted or error-free performance. We reserve the right to modify, suspend, or discontinue any aspect of our service with reasonable notice.</p>
+            </div>
+
+            <div class="tos-footer">
+                <button class="accept-btn">Accept Terms</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
