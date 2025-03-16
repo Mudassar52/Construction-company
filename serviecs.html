@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altin Oran</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="navbar.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+      /* Refined Styling for Altin Oran Services */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fc;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Elegant Services Header Section */
+.services2-section {
+    padding: 70px 0;
+    background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%);
+}
+
+.services2-Header {
+    text-align: center;
+    margin-bottom: 80px;
+    padding: 60px 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 36, 125, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.services2-Header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+}
+
+.services2-Header h4 {
+    color: #4a90e2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.services2-Header h1 {
+    color: #1e293b;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 48px;
+    position: relative;
+    display: inline-block;
+}
+
+.services2-Header h1:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #2dd4bf);
+}
+
+.services2-Header img {
+    max-width: 85px;
+    margin: 25px auto 0;
+    display: block;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Luxurious Service Sections */
+.Architectural-services {
+    margin-bottom: 90px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 36, 125, 0.06);
+    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(220, 225, 235, 0.7);
+}
+
+.Architectural-services:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 36, 125, 0.12);
+}
+
+.Architectural-services:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 0;
+    background: linear-gradient(to bottom, #3b82f6, #2dd4bf);
+    transition: height 0.5s ease;
+}
+
+.Architectural-services:hover:before {
+    height: 100%;
+}
+
+.Architectural-services h1 {
+    color: #1e293b;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    padding-left: 15px;
+}
+
+.Architectural-services:hover h1 {
+    transform: translateX(5px);
+    color: #3b82f6;
+}
+
+.Architectural-services img {
+    width: 70px;
+    margin: 10px 0 25px 15px;
+    transition: all 0.3s ease;
+}
+
+.Architectural-services:hover img {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.Architectural-services p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Sophisticated Director Section */
+.director {
+    padding: 25px 30px;
+    background: linear-gradient(to right, #f8f9fc, #fff);
+    border-left: 5px solid #3b82f6;
+    margin-top: 40px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.director:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(59, 130, 246, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.Architectural-services:hover .director {
+    box-shadow: 0 10px 20px rgba(0, 36, 125, 0.07);
+}
+
+.director h4 {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.director h5 {
+    color: #1e293b;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.director h5:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.Architectural-services:hover .director h5:after {
+    width: 100%;
+}
+
+/* Elegant Color Variations */
+.Architectural-services:nth-child(3n+1):before,
+.Architectural-services:nth-child(3n+1) .director {
+    border-color: #3b82f6;
+}
+
+.Architectural-services:nth-child(3n+1):hover h1,
+.Architectural-services:nth-child(3n+1) .director h5:after {
+    color: #3b82f6;
+    background: #3b82f6;
+}
+
+.Architectural-services:nth-child(3n+2):before,
+.Architectural-services:nth-child(3n+2) .director {
+    border-color: #2dd4bf;
+}
+
+.Architectural-services:nth-child(3n+2):hover h1,
+.Architectural-services:nth-child(3n+2) .director h5:after {
+    color: #2dd4bf;
+    background: #2dd4bf;
+}
+
+.Architectural-services:nth-child(3n+3):before,
+.Architectural-services:nth-child(3n+3) .director {
+    border-color: #f59e0b;
+}
+
+.Architectural-services:nth-child(3n+3):hover h1,
+.Architectural-services:nth-child(3n+3) .director h5:after {
+    color: #f59e0b;
+    background: #f59e0b;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 992px) {
+    .services2-Header {
+        padding: 50px 25px;
+    }
+    
+    .services2-Header h1 {
+        font-size: 42px;
+    }
+    
+    .Architectural-services {
+        padding: 35px;
+    }
+    
+    .Architectural-services h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services2-section {
+        padding: 50px 0;
+    }
+    
+    .services2-Header {
+        padding: 40px 20px;
+        margin-bottom: 60px;
+    }
+    
+    .services2-Header h1 {
+        font-size: 36px;
+    }
+    
+    .Architectural-services {
+        padding: 30px 25px;
+        margin-bottom: 70px;
+    }
+    
+    .Architectural-services h1 {
+        font-size: 26px;
+    }
+    
+    .Architectural-services p {
+        font-size: 15px;
+    }
+    
+    .director {
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services2-Header h4 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    
+    .services2-Header h1 {
+        font-size: 30px;
+    }
+    
+    .services2-Header h1:after {
+        width: 60px;
+    }
+    
+    .Architectural-services {
+        padding: 25px 20px;
+        margin-bottom: 60px;
+    }
+    
+    .Architectural-services h1 {
+        font-size: 24px;
+    }
+    
+    .director {
+        padding: 20px;
+    }
+    
+    .director h5 {
+        font-size: 20px;
+    }
+}
+
+/* Enhanced Animation Effects */
+[data-aos="zoom-in"] {
+    opacity: 0;
+    transform: scale(0.9);
+    transition-property: opacity, transform;
+}
+
+[data-aos="zoom-in"].aos-animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Scroll Enhancement */
+html {
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
+
+/* Section Anchor Improvement */
+span[id] {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+/* Additional Decorative Elements */
+.Architectural-services:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 0 0 16px 0;
+    z-index: 0;
+}
+    </style>
+</head>
+
+<body>
+    
+    
+    <!-- services-header -->
+    <div class="services2-section">
+
+     <div class="container services2-Header " data-aos="zoom-in">
+       <h4>Construction Work</h4>
+       <h1>Services Details</h1>
+       <img src="img/loanss.svg" alt="">
+     </div>
+
+     <!-- Architectural Engineering -->
+     <span id="Agricalture"></span>
+     <div class="container Architectural-services" data-aos="zoom-in" >
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <h1>Architectural Engineering</h1>
+                <img src="img/loanss.svg" alt="">
+                <p>Our architectural engineering services oﬀer a harmonious blend of creavity and technical experse. With a dedicated team of architects and engineers,
+                <br> we provide comprehensive soluons that envision, design, and realize extraordinary structures.From concept development to detailed blueprints, our collaborave approach ensures seamless integraon of aesthecs, funconality, and sustainability. With a focus on innovaon and cung-edge technologies,we bring eﬃciency to every project, be it residenal, commercial, or industrial</p>
+                <div class="director">
+                    <h4>Managing Director</h4>
+                    <h5>Altin Oran</h5>
+                </div>     
+            </div>
+        </div>
+     </div>
+
+     <!-- Civil Construction Work -->
+     <span id="civil"></span>
+     <div class="container Architectural-services" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <h1>Civil Construction Work</h1>
+                <img src="img/loanss.svg" alt="">
+                <p>Our civil construcon services oﬀer comprehensive soluons for all your infrastructure needs. With a team of experienced engineers, skilled laborers,<br>
+                From road construcon and bridges to water supply systems and drainage networks, we deliver top-notch quality that stands the test of me. Safety and sustainability are at the core of our operaons, ensuring a secure and environmentally responsible approach. Embracing innovaon and client-centricity.</p>
+                <div class="director">
+                    <h4>Managing Director</h4>
+                    <h5>Altin Oran</h5>
+                </div>     
+            </div>
+        </div>
+     </div>
+           
+     <!-- Civil Construction Work -->
+     <span id="Steel"></span>
+     <div class="container Architectural-services" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <h1>Steel Fabrication</h1>
+                <img src="img/loanss.svg" alt="">
+                <p>Our steel fabricaon work exempliﬁes precision, durability, and ingenuity. With cungedge technology and skilled crasmanship, we shape raw steel into tailored soluons for diverse industries. <br>
+                From structural frameworks to intricate components, our experse ensures superior quality and mely delivery. Each project is executed with unwavering aenon to detail, adhering to the highest industry standards. Whether it's commercial buildings, industrial structures, or architectural marvels, our steel fabricaon work stands .</p>
+                <div class="director">
+                    <h4>Managing Director</h4>
+                    <h5>Altin Oran</h5>
+                </div>     
+            </div>
+        </div>
+     </div>
+
+     <!-- Civil Construction Work -->
+     <span id="interior"></span>
+     <div class="container Architectural-services" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <h1>Interior Design & Work</h1>
+                <img src="img/loanss.svg" alt="">
+                <p>We bring your spaces to life through our impeccable design and seamless implementaon. With a keen eye for aesthecs and funconality,
+              <br> our team of talented designers creates bespoke soluons that reﬂect your unique style and needs. From conceptualizaon to execuon, we handle every aspect with meculous aenon to detail, ensuring a smooth and eﬃcient process. With a passion for innovaon and a commitment to quality, we transform interiors into capvang environments that evoke emoon and leave a lasng impression.</p>
+                <div class="director">
+                    <h4>Managing Director</h4>
+                    <h5>Altin Oran</h5>
+                </div>     
+            </div>
+        </div>
+     </div>
+      
+     <!-- Civil Construction Work -->
+     <span id="Ranovation22"></span>
+     <div class="container Architectural-services" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <h1>Renovation Services</h1>
+                <img src="img/loanss.svg" alt="">
+                <p>Discover the art of transformaon with our renovaon services. At Aln Oran, we breathe new life into your spaces, reviving them with creavity and precision.<br>
+                Our skilled team of experts is passionate about revitalizing interiors and exteriors alike, from residenal homes to commercial establishments. With a keen eye for detail and a commitment to quality, we reimagine your vision, craing seamless designs that enhance funconality and aesthecs. From concept to compleon.</p>
+                <div class="director">
+                    <h4>Managing Director</h4>
+                    <h5>Altin Oran</h5>
+                </div>     
+            </div>
+        </div>
+     </div>
+      
+
+     <!-- Civil Construction Work -->
+     <div class="container Architectural-services" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <h1>Finishing Work</h1>
+                <img src="img/loanss.svg" alt="">
+                <p>Our ﬁnishing work services in the construcon industry are second to none. With meculous aenon to detail, <br>
+                our skilled crasmen deliver exceponal outcomes that elevate the aesthec appeal and funconality of any project. From ﬂawless interior and exterior painng to expertly installed ﬂooring, elegant ling, and immaculate carpentry, we take pride in providing a comprehensive range of ﬁnishing services. Our commitment to quality ensures that each project is completed on me and to the highest standards.</p>
+                <div class="director">
+                    <h4>Managing Director</h4>
+                    <h5>Altin Oran</h5>
+                </div>     
+            </div>
+        </div>
+     </div>
+
+     <!-- Civil Construction Work -->
+     <div class="container Architectural-services" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <h1>Retroﬁtting Services</h1>
+                <img src="img/loanss.svg" alt="">
+                <p>Our retroﬁng services oﬀer comprehensive soluons to upgrade and enhance exisng structures, ensuring they meet modern standards of safety, eﬃciency, and sustainability.  <br>
+                Whether it's a commercial building, residenal complex, or industrial facility, our retroﬁng services are designed to deliver cost-eﬀecve and long-term soluons. We priorize minimal disrupon to your daily operaons and ensure that the retroﬁng process is carried out eﬃciently and with the utmost care.</p>
+                <div class="director">
+                    <h4>Managing Director</h4>
+                    <h5>Altin Oran</h5>
+                </div>     
+            </div>
+        </div>
+     </div>
+
+ <!-- Civil Construction Work -->
+  <div class="container Architectural-services" data-aos="zoom-in">
+    <div class="row">
+        <div class="col-lg-12  col-md-12 col-sm-12">
+            <h1>Safety Policy</h1>
+            <img src="img/loanss.svg" alt="">
+            <p>Our retroﬁng services oﬀer comprehensive soluons to upgrade and enhance exisng structures, ensuring they meet modern standards of safety, eﬃciency, and sustainability.<br>
+            and the communies we serve. Our goal is to prevent accidents, injuries, and occupaonal illnesses through rigorous safety training, hazard idenﬁcaon, and risk assessments. We strictly adhere to local safety regulaons and industry standards, connuously improving our safety pracces through regular audits and feedback</p>
+            <div class="director">
+                <h4>Managing Director</h4>
+                <h5>Altin Oran</h5>
+            </div>     
+        </div>
+    </div>
+ </div>
+
+
+    </div>
+
+
+
+
+    <script>
+        AOS.init(
+          {
+          duration: 1000,
+          offset: 120,
+          easing: 'ease-in-out'}
+        );
+      </script>
